@@ -141,7 +141,9 @@ p {
      width: 260px;
      height: 200px;
      float: left;
-     margin: 25px;
+     margin-left: 25px;
+     margin-right: 25px;
+     margin-bottom: 25px;
  }
  .pic {
      position: relative;

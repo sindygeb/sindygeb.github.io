@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-image: url("../images/circuit.png");
     background-color:#ffffff;
@@ -15,7 +19,7 @@ h1 {
     color: #ffffff;
     float: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
+    font-size: 22px;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 25px;
@@ -48,6 +52,8 @@ main {
     border-width: 1px;
     border-color: #dddddd;
     overflow: hidden;
+    width: 960px;
+    height: auto;
 }
 #about-link {
     color: #777777;
@@ -68,6 +74,7 @@ main {
 .bio-image {
     float: left;
     width: 200px;
+    height: auto;
     margin-right: 25px;
     margin-left: 25px;
 }
@@ -77,7 +84,7 @@ p {
     color: #777777;
     margin-left: 25px;
     margin-right: 25px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .text-block {
     color: #4aaaa5;
@@ -139,7 +146,7 @@ p {
  .image {
      position: relative;
      width: 260px;
-     height: 200px;
+     height: auto;
      float: left;
      margin-left: 25px;
      margin-right: 25px;
@@ -148,7 +155,7 @@ p {
  .pic {
      position: relative;
      width: 260px;
-     height: 200px;
+     height: auto;
  }
  h4 {
      position: absolute;
@@ -156,10 +163,10 @@ p {
      width: 100%;
      background-color: #4aaaa5;
      color: #ffffff;
-     padding-top: 18px;
-     padding-bottom: 18px;
+     padding-top: 10px;
+     padding-bottom: 10px;
      font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size: 22px;
+     font-size: 16px;
      text-align: center;
      font-weight: lighter;
  }
@@ -170,3 +177,152 @@ p {
     height: 0; 
     clear: both;
  }
+
+.col-1, .col-2, .col-3, .col-4, .col-5 {
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    main {
+        width: 960px;
+        margin: auto;
+    }
+    .head-content {
+        width: 960px;
+        overflow: hidden;
+    }
+    .bio-image {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        text-align: center;
+        padding: 25px;
+        font-size: 22px;
+        margin-left: 25px;
+    }
+    #links {
+        float: right;
+        background-color: #ffffff;
+        padding-top: 30px;
+        padding-right: 25px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        width: 600px;
+    }
+  .pic {
+        width: 235px;
+        height: auto;
+    }
+    .image {
+        width: 235px;
+    }
+    h4 {
+        position: absolute;
+        top: 85px;
+        font-size: 16px;
+        padding: 10px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 768px;
+        margin: auto;
+    }
+    .head-content {
+        width: 768px;
+    }
+    .bio-image {
+        width: 300px;
+        height: auto;
+    }
+    h1 {
+        text-align: center;
+        padding: 25px;
+        font-size: 22px;
+        margin-left: 25px;
+    }
+    #links {
+        float: right;
+        background-color: #ffffff;
+        padding-top: 30px;
+        padding-right: 25px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        width: 718px;
+    }
+    .pic {
+        width: 295px;
+        height: auto;
+    }
+    .image {
+        width: 295px;
+    }
+    h4 {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+  }
+
+@media screen and (max-width: 640px) {
+    main {
+        width: 640px;
+    }
+    .head-content {
+        width: 640px;
+    }
+    .bio-image {
+        width: 515px;
+        height: auto;
+        padding-bottom: 25px;
+    }
+    h1 {
+        width: 640px;
+        float: none;
+        text-align: center;
+        padding: 30px;
+        font-size: 30px;
+        margin: 0px;
+    }
+    #links {
+        float: none;
+        background-color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        width: 590px;
+    }
+    .image {
+        width: 515px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    .pic {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    h4 {
+        font-size: 24px;
+        margin-top: 190px;
+    }
+  }
